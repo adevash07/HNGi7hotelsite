@@ -1,3 +1,8 @@
+@font-face{
+    font-family: "Muli";
+    src: url('debuggerFonts/Muli-VariableFont_wght.ttf') format('truetype');
+}
+
 @font-face {
     font-family: 'Muli Regular';
     font-style: normal;
@@ -72,6 +77,11 @@ nav li a:hover{
 .navbar{
     padding-left: 0px;
 }
+
+.restLogo {
+    border-bottom: 1px solid #f6ae2d;
+}
+
 #heading{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -177,7 +187,7 @@ nav li a:hover{
     margin-bottom: 1.5em;
 }
 #bookingSection p{
-    font-family: 'Muli Regular';
+    font-family: 'Muli';
     font-style: normal;
     font-weight: 300;
     font-size: 1.2em;
@@ -190,7 +200,7 @@ nav li a:hover{
     width: 12.5%;
     height: auto;
     text-align: center;
-    font-family: 'Muli Regular';
+    font-family: 'Muli';
     font-style: normal;
     font-weight: bold;
     font-size: 1em;

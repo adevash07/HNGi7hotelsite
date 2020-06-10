@@ -4,6 +4,11 @@
     font-weight: normal;
     src: local('Muli Regular'), url('../lib/Muli-Regular.woff') format('woff');
   }
+
+  @font-face{
+    font-family: "Muli";
+    src: url('debuggerFonts/Muli-VariableFont_wght.ttf') format('truetype');
+}
   
   @font-face {
     font-family: 'Playfair Display';
@@ -70,6 +75,11 @@ nav li a:hover{
 .navbar{
     padding-left: 0px;
 }
+
+.restLogo {
+    border-bottom: 1px solid #f6ae2d;
+}
+
 #heading{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -196,7 +206,7 @@ textarea{
     margin-bottom: 1.5em;
 }
 #bookingSection p{
-    font-family: 'Muli Regular';
+    font-family: 'Muli';
     font-style: normal;
     font-weight: 300;
     font-size: 1.2em;
@@ -209,7 +219,7 @@ textarea{
     width: 12.5%;
     height: auto;
     text-align: center;
-    font-family: 'Muli Regular';
+    font-family: 'Muli';
     font-style: normal;
     font-weight: bold;
     font-size: 1em;
@@ -226,7 +236,7 @@ footer{
     margin: 0em 0em 0em 0em;
     width: 100%;
     padding: 0px;
-    font-family: 'Muli Regular';
+    font-family: 'Muli';
     font-style: normal;
     font-weight: normal;
     color: #0D3644;   
@@ -447,7 +457,7 @@ footer div:nth-child(3){
         width: fit-content;
         height: auto;
         text-align: center;
-        font-family: 'Muli Regular';
+        font-family: 'Muli';
         font-style: normal;
         font-weight: bold;
         font-size: 1em;
@@ -1012,7 +1022,6 @@ footer div:nth-child(3){
         color: rgba(13, 54, 68, 0.6);        
     }
     .navbar-toggler{
-        padding: 15px;
         margin: 0px;
     }
     nav li a{

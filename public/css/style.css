@@ -1,12 +1,23 @@
 /*-------------------------------------------FIYIN STARTS HERE-------------------------------------------
 	-----------------------------------------------------------------------------------------------------------*/
 @font-face{
-	font-family: "Playfair Display";
-	src: url('../lib/PlayfairDisplay-VariableFont_wght.ttf') format('truetype'); 
-}
-@font-face{
 	font-family: "Muli";
-	src: url('../lib/Muli-VariableFont_wght.ttf') format('truetype');
+	src: url('debuggerFonts/Muli-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Muli Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Muli Regular'), url('../lib/Muli-Regular.woff') format('woff');
+  }  
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Playfair Display'), url('../lib/playfair-display-v20-latin-regular.woff') format('woff');
+  }
 }
 @font-face{
 	font-family: "Lato";
@@ -14,7 +25,7 @@
 }
 
 header {
-	width: 80%;
+	width: 100%;
 	margin:0 auto;
 }
 
@@ -22,7 +33,6 @@ header {
 header{
     display: grid;
     grid-template-columns: 50% 50%;
-    margin: 0px 0px 0px 4%;
     padding: 0%;
 
 }
@@ -69,6 +79,11 @@ nav li a:hover{
 }
 .navbar{
     padding-left: 0px;
+    justify-content: flex-end;
+}
+
+.nav-item {
+	text-align: center;
 }
 /*************Temitope***************/
 .restLogo {
@@ -232,7 +247,16 @@ color: rgba(13,54,68,0.6);}
     	text-align: center;
     	font-size:16px;
     	padding-top: 30px;
+    	font-family: "Muli"
     }
+
+    .btnn:hover {
+    	color: white;
+    }
+	.btnn:active {
+		border: 1px solid black;
+	}
+
     .btn-btn{
 		color:white;
 		background-color: none;
@@ -480,7 +504,7 @@ margin-top: 6px;
 	color:#0D3644;
 	}
 .every {
-	font-family: Lato;
+	font-family: 'Muli';
 	font-size: 14px;
 	opacity: 0.7;
 }
@@ -504,6 +528,9 @@ margin-top: 6px;
 	.Atypical {
 		padding: 20px;
 	}
+	.room1 {
+		margin-bottom: 1%;
+	}
 }
 
 @media screen and (max-width: 1048px) {
@@ -516,6 +543,23 @@ margin-top: 6px;
 		width: auto;
 	}
 }
+
+@media screen and (max-width: 991px){
+	nav li {
+		font-size: 1.25em;
+	}
+}
+
+@media screen and (max-width: 796px){
+	.offer {
+		display: none;
+	}
+
+	.counter {
+		    padding: 5rem 0;
+	}
+}
+
 
 @media screen and (max-width:740px ) {
 	.atypical-Con:nth-child(2) {
